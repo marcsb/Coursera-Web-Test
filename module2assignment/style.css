@@ -1,0 +1,94 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 175%;
+}
+
+.item {
+  border: 1px solid black;
+  background-color: lightgrey;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  height: 250px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.itemlabel{
+  border: 1px solid black;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  height: 40px;
+  width: 120px;
+  font-size: 125%;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.itemlabelsushi{
+  background-color: darkolivegreen;
+  color: white;
+}
+
+.itemlabelramen{
+  background-color: darkorange;
+  color: black;
+}
+
+.itemlabeltempura{
+  background-color: crimson;
+  color: white;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+/********** Laptop devices only **********/
+@media (min-width: 992px) {
+  .col-lg {
+    float: left;
+}
+  .col-lg {
+    width: 33.33%;
+    position: relative;
+  }
+
+}
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 50%;
+    position: relative;
+  }
+  .col-md-2 {
+    width: 100%;
+    position: relative;
+  }
+}
+
+/********** Phone devices only **********/
+@media (min-width: 10px) and (max-width: 767px) {
+  .col-sm{
+    float: left;
+  }
+  .col-sm {
+    width: 100%;
+    position: relative;
+  }
+
+}
